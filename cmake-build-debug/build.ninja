@@ -60,12 +60,6 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_Part_A: phony || CMakeFiles/Part_A.dir
 
-build CMakeFiles/Part_A.dir/main.cpp.obj: CXX_COMPILER__Part_A_Debug C$:/Users/Aviva/Desktop/C++/Ex5/Part$ A/main.cpp || cmake_object_order_depends_target_Part_A
-  DEP_FILE = CMakeFiles\Part_A.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\Part_A.dir
-  OBJECT_FILE_DIR = CMakeFiles\Part_A.dir
-
 build CMakeFiles/Part_A.dir/Demo.cpp.obj: CXX_COMPILER__Part_A_Debug C$:/Users/Aviva/Desktop/C++/Ex5/Part$ A/Demo.cpp || cmake_object_order_depends_target_Part_A
   DEP_FILE = CMakeFiles\Part_A.dir\Demo.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -84,6 +78,18 @@ build CMakeFiles/Part_A.dir/sources/Man.cpp.obj: CXX_COMPILER__Part_A_Debug C$:/
   OBJECT_DIR = CMakeFiles\Part_A.dir
   OBJECT_FILE_DIR = CMakeFiles\Part_A.dir\sources
 
+build CMakeFiles/Part_A.dir/TestCounter.cpp.obj: CXX_COMPILER__Part_A_Debug C$:/Users/Aviva/Desktop/C++/Ex5/Part$ A/TestCounter.cpp || cmake_object_order_depends_target_Part_A
+  DEP_FILE = CMakeFiles\Part_A.dir\TestCounter.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Part_A.dir
+  OBJECT_FILE_DIR = CMakeFiles\Part_A.dir
+
+build CMakeFiles/Part_A.dir/Test.cpp.obj: CXX_COMPILER__Part_A_Debug C$:/Users/Aviva/Desktop/C++/Ex5/Part$ A/Test.cpp || cmake_object_order_depends_target_Part_A
+  DEP_FILE = CMakeFiles\Part_A.dir\Test.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Part_A.dir
+  OBJECT_FILE_DIR = CMakeFiles\Part_A.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Part_A
@@ -92,7 +98,7 @@ build CMakeFiles/Part_A.dir/sources/Man.cpp.obj: CXX_COMPILER__Part_A_Debug C$:/
 #############################################
 # Link the executable Part_A.exe
 
-build Part_A.exe: CXX_EXECUTABLE_LINKER__Part_A_Debug CMakeFiles/Part_A.dir/main.cpp.obj CMakeFiles/Part_A.dir/Demo.cpp.obj CMakeFiles/Part_A.dir/sources/OrgChart.cpp.obj CMakeFiles/Part_A.dir/sources/Man.cpp.obj
+build Part_A.exe: CXX_EXECUTABLE_LINKER__Part_A_Debug CMakeFiles/Part_A.dir/Demo.cpp.obj CMakeFiles/Part_A.dir/sources/OrgChart.cpp.obj CMakeFiles/Part_A.dir/sources/Man.cpp.obj CMakeFiles/Part_A.dir/TestCounter.cpp.obj CMakeFiles/Part_A.dir/Test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Part_A.dir

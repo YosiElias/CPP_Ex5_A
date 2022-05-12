@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 #include <algorithm>
 #include "doctest.h"
 #include "sources/OrgChart.hpp"
@@ -36,24 +37,28 @@ TEST_CASE("Case 1") {
     CHECK_FALSE(o.begin_reverse_order() == o.begin_level_order());
     CHECK_FALSE(o.reverse_order() == o.end_level_order());
     CHECK_EQ(o.begin_reverse_order(), o.end_level_order());
-    auto it = o.begin_level_order();
-//    it++;
-//    string s = *it;   //Todo: add list for result and compare it to *it ! ! !
-    for (auto it=o.begin_level_order(); it!=o.end_level_order(); ++it) {
-       if((*it)=="a")
-           cout<<"yes";
+    vector<string> result = {"A", "a1", "B", "b1", "a2", "a3"};
+    size_t i =0;
+    for (auto it=o.begin_preorder(); it!=o.end_preorder(); ++it) {
+        CHECK_EQ((*it),result.at(i));
+        i++;
     }
-//    if ("a1"==(*it))
-//        cout<<"yes";
-//    CHECK_EQ("a1", (*it));
-//    CHECK_EQ((++o.begin_level_order()).pointer_to_current_man->_name, "B");
-//    CHECK_EQ(o.begin_preorder(), o.begin_level_order());
-//    CHECK_EQ((o.begin_reverse_order()).pointer_to_current_man->_name, "a3");
-//    CHECK_EQ((++o.begin_preorder()).pointer_to_current_man->_name, "a1");
-//    CHECK_EQ((++o.begin_preorder()).pointer_to_current_man->_name, "B");
-//    CHECK_EQ((++o.begin_preorder()).pointer_to_current_man->_name, "b1");
-//    CHECK_EQ((++o.begin_preorder()).pointer_to_current_man->_name, "a2");
-//    CHECK_EQ((++o.begin_preorder()).pointer_to_current_man->_name, "a3");
+    result.clear();
+    result = {"A", "a1", "B", "a2", "a3", "b1"};
+    i =0;
+    for (auto it=o.begin_level_order(); it!=o.end_level_order(); ++it) {
+                CHECK_EQ((*it),result.at(i));
+        i++;
+    }
+    result = {"b1", "a3", "a2", "B", "a1", "A"};
+    i =0;
+    for (auto it=o.begin_reverse_order(); it!=o.reverse_order(); ++it) {
+                CHECK_EQ((*it),result.at(i));
+        i++;
+    }
+    //placeholder for 18 tests can't be checked yet:
+    for (int i=0; i<18; i++){CHECK_EQ("placeholder for tests cant be checked yet","");}
+
 
 
 }

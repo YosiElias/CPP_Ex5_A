@@ -3,4 +3,4 @@ project(Part_A)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Part_A main.cpp sources/OrgChart.hpp Demo.cpp sources/OrgChart.cpp sources/Man.hpp sources/Man.cpp)
+add_executable(Part_A sources/OrgChart.hpp Demo.cpp sources/OrgChart.cpp sources/Man.hpp sources/Man.cpp TestCounter.cpp Test.cpp)
