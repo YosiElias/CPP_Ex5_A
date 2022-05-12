@@ -1,0 +1,16 @@
+# ninja log v5
+2	411	6740941079626293	build.ninja	4fb7994ec0166ac
+3	106	6740908617239045	CMakeFiles/Part_A.dir/main.cpp.obj	6d222cd074a1403c
+3	826	6740916899751515	CMakeFiles/Part_A.dir/Demo.cpp.obj	1c3c60c4be94758c
+8	1009	6740913164297210	CMakeFiles/Part_A.dir/Man.cpp.obj	d53671917734c9e
+17	2594	6740916917505109	CMakeFiles/Part_A.dir/OrgChart.cpp.obj	9a23688308a87643
+2594	2847	6740916920004653	Part_A.exe	3917f668f75feac8
+1	595	6740941079626293	build.ninja	4fb7994ec0166ac
+14	1859	6740941098043032	CMakeFiles/Part_A.dir/Demo.cpp.obj	1c3c60c4be94758c
+5	1984	6740941100449988	CMakeFiles/Part_A.dir/sources/Man.cpp.obj	59be957524630ac5
+9	3543	6740941116078395	CMakeFiles/Part_A.dir/sources/OrgChart.cpp.obj	b8b8a3b746a4d9a5
+3544	3891	6740941119697023	Part_A.exe	1e1539222d6acf1f
+27	819	6740953345531039	CMakeFiles/Part_A.dir/sources/Man.cpp.obj	59be957524630ac5
+5	839	6740953345772618	CMakeFiles/Part_A.dir/Demo.cpp.obj	1c3c60c4be94758c
+22	2051	6740953357890524	CMakeFiles/Part_A.dir/sources/OrgChart.cpp.obj	b8b8a3b746a4d9a5
+2051	2248	6740953359808745	Part_A.exe	1e1539222d6acf1f
